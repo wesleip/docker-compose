@@ -29,14 +29,14 @@ version: '3'
  
 services:
   db:
-    image: mariadb:latest
-    container_name: my_db
-    environment:
+    image: mariadb:latest #nome da imagem utilizada na criação do contêiner
+    container_name: my_db #nome que sera dado ao contêiner
+    environment: # conjunto de variáveis passadas na configuração do MariaDB
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: create_your_db
       MYSQL_USER: your_user_here
       MYSQL_PASSWORD: create_password
-    ports:
+    ports: #porta utilizada para acesso ao banco de dados
       - "3306:3306"
     volumes:
       - /var/lib/mysql
@@ -59,7 +59,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    volumes:
+    volumes: #volume que será montado na visualização da URL do servidor web
       - /home/Projects/repo:/var/www/html
     links:
       - db
