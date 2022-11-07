@@ -1,4 +1,4 @@
-# Criando conteinêrs com PHP, MariaDB e PHPmyAdmin utilizando um arquivo docker-compose
+# Criando contêineres com PHP, MariaDB e PHPmyAdmin utilizando um arquivo docker-compose
 
 ### Download das imagens em https://hub.docker.com 
 
