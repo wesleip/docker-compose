@@ -54,8 +54,8 @@ services:
       - 8081:80
     
   web:
-    image: php:7.4-apache
     container_name: my_php
+    build: .
     ports:
       - "80:80"
       - "443:443"
