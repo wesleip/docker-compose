@@ -5,10 +5,10 @@ services:
     image: mariadb:latest
     container_name: my_db
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: create_your_db
-      MYSQL_USER: your_user_here
-      MYSQL_PASSWORD: create_password
+      MYSQL_ROOT_PASSWORD: root #senha de root para o banco de dados
+      MYSQL_DATABASE: create_your_db #nome do banco de dados
+      MYSQL_USER: your_user_here #usuário do banco de dados
+      MYSQL_PASSWORD: create_password #senha para o banco de dados
     ports:
       - "3306:3306"
     volumes:
