@@ -39,7 +39,7 @@ services:
     ports: #porta utilizada para acesso ao banco de dados
       - "3306:3306"
     volumes:
-      - /var/lib/mysql
+      - ./data:/var/lib/mysql
   
   phpmyadmin:
     image: phpmyadmin:latest
