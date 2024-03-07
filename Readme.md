@@ -64,3 +64,8 @@ services:
     links:
       - db
 ~~~
+
+## Execução do arquivo docker-compose.yml
+~~~bash
+docker compose up -d
+~~~
